@@ -21,7 +21,7 @@ The project compares multiple machine learning models and highlights the trade-o
 
 ### Dataset
 
-The project uses publicly available datasets:
+The project uses publicly available datasets: https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
 
 * True.csv – Contains real news articles
 
@@ -45,31 +45,19 @@ The project uses publicly available datasets:
 
 * Libraries:
 
-pandas
+1) pandas
 
-numpy
+2) numpy
 
-nltk
+3) nltk
 
-scikit-learn
+4) scikit-learn
 
-matplotlib
+5) matplotlib
 
 ### Project Workflow
 
-Data Collection
-      ↓
-Text Preprocessing
-(cleaning, stopword removal)
-      ↓
-TF-IDF Vectorization
-      ↓
-Model Training
-(LR, RF, DT, MNB)
-      ↓
-Model Evaluation
-      ↓
-Prediction & Analysis
+Data Collection --> Text Preprocessing(cleaning, stopword removal) --> TF-IDF Vectorization --> Model Training(LR, RF, DT, MNB) --> Model Evaluation --> Prediction & Analysis
 
 
 ### Text Preprocessing
@@ -88,11 +76,11 @@ These steps reduce noise and improve model accuracy.
 
 * TF-IDF (Term Frequency–Inverse Document Frequency) is used to:
 
-Convert text into numerical vectors
+1) Convert text into numerical vectors
 
-Assign higher importance to informative words
+2) Assign higher importance to informative words
 
-Reduce the impact of common words
+3) Reduce the impact of common words
 
 ### Machine Learning Models Used
 
@@ -104,18 +92,19 @@ Reduce the impact of common words
 
 * Multinomial Naive Bayes
 
-📊 Model Performance (Test Data)
-Model	Accuracy	Precision	Recall	F1-Score
-Logistic Regression	99.18%	98.87%	99.44%	99.16%
-Random Forest	99.85%	99.90%	99.79%	99.85%
-Decision Tree	99.71%	99.70%	99.70%	99.70%
-Multinomial Naive Bayes	94.21%	94.40%	93.53%	93.97%
-🔍 Key Observations
+### Model Performance (Test Data)
 
-Random Forest achieved the highest overall accuracy and F1-score on full news articles
+* Logistic Regression	      Accuracy=99.18%	Precision=98.87%	 Recall=99.44%	F1-Score=99.16%
+* Random Forest	            Accuracy99.85%	Precision=99.90%	 Recall=99.79%	F1-Score=99.85%
+* Decision Tree	            Accuracy=99.71%	Precision=99.70%	 Recall99.70%	F1-Score=99.70%
+* Multinomial Naive Bayes	Accuracy=94.21%	Precision=94.40%	 Recall=93.53%	F1-Score93.97%
 
-Decision Tree and Logistic Regression also performed exceptionally well
+### Key Observations
 
-Multinomial Naive Bayes, despite lower overall accuracy, showed better generalization on short text inputs (news titles)
+* Random Forest achieved the highest overall accuracy and F1-score on full news articles
 
-High evaluation scores do not always guarantee correct real-world predictions on sparse or unseen inputs
+* Decision Tree and Logistic Regression also performed exceptionally well
+
+* Multinomial Naive Bayes, despite lower overall accuracy, showed better generalization on short text inputs (news titles)
+
+* High evaluation scores do not always guarantee correct real-world predictions on sparse or unseen inputs
