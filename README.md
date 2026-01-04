@@ -23,27 +23,27 @@ The project compares multiple machine learning models and highlights the trade-o
 
 The project uses publicly available datasets:
 
-True.csv – Contains real news articles
+* True.csv – Contains real news articles
 
-Fake.csv – Contains fake news articles
+* Fake.csv – Contains fake news articles
 
-Each dataset includes:
+### Each dataset includes:
 
-News title
+* News title
 
-News text
+* News text
 
-A binary label is assigned:
+### A binary label is assigned:
 
-1 → Real news
+* 1 → Real news
 
-0 → Fake news
+* 0 → Fake news
 
 ### Tech Stack
 
 * Programming Language: Python
 
-*Libraries:
+* Libraries:
 
 pandas
 
